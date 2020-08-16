@@ -1,6 +1,5 @@
 package main
 
-
 import "fmt"
 import "math/rand"
 import "github.com/klauspost/reedsolomon"
