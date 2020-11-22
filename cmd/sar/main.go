@@ -1,16 +1,12 @@
 package main
 
-import (
-	"github.com/mike-pittelko/sar/slab"
-)
-
 //TODO: Make slab a container for the slab, and the shards, figure our how "new" should work on a struct
 //TODO: Existing slab definition is more like a shard than a slab. shard needs, header, sum, etc.
 
 func main() {
 	// Create some sample data
 
-	var slab1 = slab.NewSlabWithSize(250000)
+	var slab1 = NewSlabWithSize(250000)
 	slab1.RandomFill()
 
 	/*

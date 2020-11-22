@@ -1,4 +1,4 @@
-package slab 
+package main
 
 import (
 	"crypto/sha1"
