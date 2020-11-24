@@ -1,0 +1,21 @@
+{
+    "go.buildOnSave": "workspace",
+    "go.editorContextMenuCommands": {
+
+        "toggleTestFile": true,
+        "addTags": true,
+        "removeTags": false,
+        "testAtCursor": true,
+        "testFile": false,
+        "testPackage": false,
+        "generateTestForFunction": true,
+        "generateTestForFile": false,
+        "generateTestForPackage": false,
+        "addImport": true,
+        "testCoverage": true,
+        "playground": true,
+        "debugTestAtCursor": true
+    },
+    "go.formatTool": "gofmt",
+    "go.goroot": "~/go"
+}
