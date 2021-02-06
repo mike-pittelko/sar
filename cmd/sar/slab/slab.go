@@ -45,6 +45,11 @@ func NewSlab() *Slab {
 	return slab1
 }
 
+// GetSlabBytes is a getter for the raw byte slice of the content of this slab
+func (slab1 Slab) GetSlabBytes() []byte {
+	return slab1.slabBytes
+}
+
 // NewSlabWithSize is a factory function for slabs that have a buffer preallocates with newSize uint64 bytes of zeros.
 func NewSlabWithSize(newSize uint64) *Slab {
 	slab1 := NewSlab()
