@@ -27,7 +27,6 @@ func Test(t *testing.T) {
 	if ok {
 		fmt.Println("SAR: Verify ok")
 	} else {
-		fmt.Println("SAR: Failed to Verify stage 1")
 		t.Error("SAR: Failed to Verify stage 1 during Shard Test w/ RS")
 	}
 
@@ -39,7 +38,6 @@ func Test(t *testing.T) {
 	if ok {
 		fmt.Println("SAR: Reconstruct ok")
 	} else {
-		fmt.Println("SAR: Failed to verify reconstruction, stage 2")
 		t.Error("SAR: Failed to verify reconstruction, stage 2, during Shard Test w/ RS")
 	}
 
