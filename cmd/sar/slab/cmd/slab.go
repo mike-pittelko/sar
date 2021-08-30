@@ -1,4 +1,4 @@
-package slab
+package cmd
 
 import (
 	"crypto/sha1"
@@ -11,8 +11,9 @@ import (
 )
 
 // Slabs
-// A slab is the middle container of a stored object. It is composed of multiple shards. Each shard is a standalone component of
-// data, split off from the slab, encoded as appropriate, and ready to be delivered/received from an endpoint.
+// A slab is the middle container of a stored object. A stored obect is composed of one or more slabs
+// A slab is composed of multiple shards. Each shard is a standalone component of data, split off from
+// the slab, encoded as appropriate, and ready to be delivered/received from an endpoint.
 //
 // Slab    HEADER
 //				slab ident
@@ -107,7 +108,7 @@ func (slab1 *Slab) SplitShards() *Slab {
 }
 
 // AddTarget adds a destination endpoint (at this time, cannot delete these) A better way is to create a
-// "Target" that contains muultiple endpoints, and add that to the slab.
+// "Target" that contains multiple endpoints, and add that to the slab.
 func (slab1 *Slab) AddTarget(endpointString string) *Slab {
 
 	return slab1
