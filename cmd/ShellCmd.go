@@ -28,7 +28,7 @@ func pcFromCommands(parent readline.PrefixCompleterInterface, c *cobra.Command) 
 	}
 }
 
-}
+
 func runShell() {
 	completer := readline.NewPrefixCompleter()
 	for _, child := range RootCmd.Commands() {

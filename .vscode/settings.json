@@ -17,5 +17,6 @@
         "debugTestAtCursor": true
     },
     "go.formatTool": "gofmt",
-    "go.goroot": "~/go"
+    "go.goroot": "~/go",
+    "git.autofetch": true
 }
