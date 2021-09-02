@@ -15,18 +15,9 @@ var shellCmd = &cobra.Command{
 		runShell()
 	},
 }
-var lsCmd = &cobra.Command{
-	Use:   "shell",
-	Short: "This is a shell version of this tool",
-	Long:  ``,
-	Run: func(cmd *cobra.Command, args []string) {
-        runLs()
-	},
-}
 
 func init() {
 	RootCmd.AddCommand(shellCmd)
-    shellCmd.AddCommand(lsCmd)
 }
 
 func pcFromCommands(parent readline.PrefixCompleterInterface, c *cobra.Command) {
@@ -37,10 +28,6 @@ func pcFromCommands(parent readline.PrefixCompleterInterface, c *cobra.Command) 
 	}
 }
 
-func runLs() {
-    for _, child := range RootCmd.Commands() {
-            fmt.print(child)
-        }   
 }
 func runShell() {
 	completer := readline.NewPrefixCompleter()
